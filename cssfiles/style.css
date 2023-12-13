@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+        line-height: 20px;
+
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+/* start of nav */
+nav{
+    background-color:rgb(34, 34, 100) ;
+    /* display: block; */
+    color: white;
+    height: 60px;
+    width: 100%;
+}
+
+nav img{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+}
+nav ul{
+    list-style: none;
+ color: aliceblue;
+ overflow: auto ;
+}
+nav ul li{
+    display: inline-block;
+        /* border: 1px solid rgba(237, 229, 245, 0.509); */
+        border-radius: 20px;
+        float: right;
+}
+nav ul li a{
+    padding: 20px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: aliceblue;
+        transition: .2s all;
+        border-radius: 20px;
+}
+nav ul li a:hover {
+    color:rgb(34, 34, 100);
+    background-color:aliceblue;
+    border: 2px solid rgb(34, 34, 100);
+}
+/* start of section */
+/* section .p-img{
+     padding: 10em 0 0;
+     height: 90px;
+     display: block;
+}
+section .p-img .left p{
+    display: inline-block;
+    width: 50%;
+    min-height: 100%;
+    padding: 25px 0 0 40px;
+    margin-right: 60px;
+}
+section .p-img .right{
+  display: inline-block;
+}
+section .p-img .right img {
+display: block;
+margin: auto;
+width: 80%;
+} */
+/* .p-img p , img{
+display: inline-block;
+} */
+.left{
+    margin:60px 0;
+}
+ .left p{
+    width: 50%;
+    display: inline-block;
+    padding: 20px;
+margin-right:40px ;
+/* width: 250px; */
+    height: 250px;
+}
+.left img{
+width: 250px;
+height: 250px;
+}
+.images{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    overflow:auto;
+}
+.images img{
+    height: 300px;
+    width: 300px;
+    background-color: gray;
+    padding: 10px;
+}
+@media (max-width:895px){
+  
+    .images{
+        display: grid;
+    }
+}
+@media (max-width:591px){
+    .left p{
+        margin: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .left img{
+        display: block;
+    }
+}
+@media (max-width:426px) {
+    nav{
+        height: auto;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
